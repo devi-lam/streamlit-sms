@@ -1,4 +1,3 @@
-import sklearn
 import pickle
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
