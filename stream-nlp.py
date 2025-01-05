@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-from sklearn.feature_extraction.text import tfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # load save model
 model_fraud = pickle.load(open('model_fraud.sav', 'rb'))
