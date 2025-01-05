@@ -13,7 +13,7 @@ loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(
 # judul halaman
 st.title('Prediksi SMS Penipuan')
 
-clean_text = st.text_input('Masukkan Teks SMS')
+clean_teks = st.text_input('Masukkan Teks SMS')
 
 fraud_detection = ''
 
@@ -22,7 +22,7 @@ if st.button('Hasil Deteksi'):
 
     if (predict_fraud == 0):
         fraud_detection = 'SMS Normal'
-    elif (predict_fraud == 1)
+    elif (predict_fraud == 1):
         fraud_detection = 'SMS Fraud'
     else:
         fraud_detection = 'SMS Promo'
